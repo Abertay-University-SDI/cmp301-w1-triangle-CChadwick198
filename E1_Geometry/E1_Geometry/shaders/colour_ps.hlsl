@@ -10,5 +10,6 @@ struct InputType
 
 float4 main(InputType input) : SV_TARGET
 {
-	return input.colour;
+	//return input.colour;
+    return float4(1.f, 0.f, 0.f, 1.f); // Task 6: use the pixel shader to override the colour so the triangle is red
 }
